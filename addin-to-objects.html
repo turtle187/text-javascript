@@ -1,0 +1,26 @@
+<html>
+<head>
+  <script type="text/javascript">
+    function people(name , age){
+        this.name = name;
+        this.age = age;
+        this.yearsUntilRetire = yearsLeft;
+        
+    }
+    function yearsLeft(){
+        var numYears = 65 - this.age;
+        return numYears;
+    }
+ var natalie = new people("natalie", 28);
+ var tom = new people("tom", 40);
+       </script>
+ 
+ </head>
+    <body>
+       
+    <script type="text/javascript">
+        document.write(natalie.yearsUntilRetire());
+    </script>
+    
+    </body>
+</html>
